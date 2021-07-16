@@ -3,12 +3,12 @@ module Snowcord
 
   DISCORD_EPOCH = 1420070400000
 
-  def self.now_snowflake
-    return self.to_snowflake(Time.utc.to_unix_ms)
+  def self.snowflake_at(time : Int = Time.utc.to_unix_ms)
+    return self.to_snowflake(time)
   end
 
-  def self.to_snowflake(unixTimestamp : Int)
-    return (unixTimestamp - DISCORD_EPOCH) << 22
+  def self.to_snowflake(unix_timestamp : Int)
+    return (unix_timestamp - DISCORD_EPOCH) << 22
   end
 
   def self.to_unix(snowflake : Int)

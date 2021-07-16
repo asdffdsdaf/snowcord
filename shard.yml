@@ -1,0 +1,9 @@
+name: snowcord
+version: 1.0.0
+
+authors:
+  - asdffdsdaf <87440869+asdffdsdaf@users.noreply.github.com>
+
+crystal: 1.1.0-dev
+
+license: MIT

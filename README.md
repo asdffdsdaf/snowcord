@@ -19,9 +19,8 @@ Small Discord Snowflake converter
 ```crystal
 require "snowcord"
 
+Snowcord.snowflake_at # Convert current time to Discord Snowflake
+
 Snowcord.to_snowflake(unix) # Convert unix timestamp to Discord Snowflake
 Snowcord.to_unix(snowflake) # Convert Discord Snowflake to unix timestamp
-Snowcord.now_snowflake # Convert current time to Discord Snowflake
 ```
-
-TODO: Write usage instructions here
